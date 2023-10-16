@@ -71,13 +71,100 @@
 
 <style type="text/css">
 
-* { box-sizing: border-box; } body {margin: 0;}
+* { box-sizing: border-box; } body {margin: 0;}.tab{padding-top:7px;padding-right:14px;padding-bottom:7px;padding-left:14px;display:inline-block;border-top-left-radius:3px;border-top-right-radius:3px;border-bottom-right-radius:3px;border-bottom-left-radius:3px;margin-right:10px;}.tab:focus{outline-color:initial;outline-style:none;outline-width:initial;}.tab.tab-active{background-color:rgb(13, 148, 230);color:white;}.tab-container{display:inline-block;}.tab-content{animation-duration:1s;animation-timing-function:ease;animation-delay:0s;animation-iteration-count:1;animation-direction:normal;animation-fill-mode:none;animation-play-state:running;animation-name:fadeEffect;animation-timeline:auto;animation-range-start:normal;animation-range-end:normal;}.tab-contents{min-height:100px;padding-top:10px;padding-right:10px;padding-bottom:10px;padding-left:10px;}#iq2uc{padding:10px;}#i97ac{padding:10px;}#ii1yw{padding:10px;}@keyframes fadeEffect{0%{opacity:0;}100%{opacity:1;}}
 
 </style>
 
 </head>
 		<html>
  <head></head>
- <body id="inw9" class="bg-secondary"></body>
+ <body id="inw9">
+  <div id="ir56">
+   <div role="tablist" class="tab-container">
+    <div role="tab" aria-controls="i39w8" id="i0ht" class="tab">
+     <span>Tab</span>
+    </div>
+    <div role="tab" aria-controls="iqr9k" id="ionu" class="tab">
+     <span>Tab</span>
+    </div>
+    <div role="tab" aria-controls="ig405" id="ii2m" class="tab">
+     <span id="iqjup">Tab</span>
+    </div>
+    <div role="tab" aria-controls="i7qle" id="ihfxj" class="tab">
+     <span id="ij0wz">Tab</span>
+    </div>
+    <div role="tab" aria-controls="iyy8i" id="iv8pp" class="tab">
+     <span>Tab</span>
+    </div>
+    <div role="tab" aria-controls="ibs6n" id="ih2g6" class="tab">
+     <span>Tab</span>
+    </div>
+    <div role="tab" aria-controls="i85pj" id="imfw4" class="tab">
+     <span id="i1g4n">Tab</span>
+    </div>
+    <div role="tab" aria-controls="i3zb1" id="ik1ak" class="tab">
+     <span id="i9ilw">Tab</span>
+    </div>
+   </div>
+   <div class="tab-contents" id="iq91u">
+    <div role="tabpanel" id="i39w8" aria-labelledby="i0ht" hidden class="tab-content">
+     <div>
+      Tab Content
+     </div>
+    </div>
+    <div role="tabpanel" id="iqr9k" aria-labelledby="ionu" hidden class="tab-content">
+     <div>
+      Tab Content
+     </div>
+    </div>
+    <div role="tabpanel" id="ig405" aria-labelledby="ii2m" hidden class="tab-content">
+     <div id="iq2uc">
+      sdfasdfasdf
+     </div>
+     <div>
+      Tab Content
+     </div>
+    </div>
+    <div role="tabpanel" id="i7qle" aria-labelledby="ihfxj" hidden class="tab-content">
+     <div>
+      Tab Content
+     </div>
+    </div>
+    <div role="tabpanel" id="iyy8i" aria-labelledby="iv8pp" hidden class="tab-content">
+     <div>
+      Tab Content
+     </div>
+    </div>
+    <div role="tabpanel" id="ibs6n" aria-labelledby="ih2g6" hidden class="tab-content">
+     <div>
+      Tab Content
+     </div>
+    </div>
+    <div role="tabpanel" id="i85pj" aria-labelledby="imfw4" hidden class="tab-content">
+     <div>
+      Tab Content
+     </div>
+    </div>
+    <div role="tabpanel" id="i3zb1" aria-labelledby="ik1ak" hidden class="tab-content">
+     <div id="i97ac">
+      Insert your text here
+     </div>
+     <div>
+      Tab Content
+     </div>
+    </div>
+   </div>
+  </div>
+  <div id="ii1yw">
+   sdfasdfasdf
+  </div>
+  <script>var props = {"ir56":{"classactive":"tab-active","selectortab":"aria-controls"}};
+          var ids = Object.keys(props).map(function(id) { return '#'+id }).join(',');
+          var els = document.querySelectorAll(ids);
+          for (var i = 0, len = els.length; i < len; i++) {
+            var el = els[i];
+            (function (t) { var e, n, r = this, o = t.classactive, a = t.selectortab, c = window, i = c.history, s = c._isEditor, b = '[role=tab]', p = document, l = p.body, u = p.location, f = l.matchesSelector || l.webkitMatchesSelector || l.mozMatchesSelector || l.msMatchesSelector, y = function (t, e) { for (var n = t || [], r = 0; r < n.length; r++)e(n[r], r) }, d = function (t) { return t.getAttribute(a) }, O = function (t, e) { return t.querySelector(e) }, g = function () { return r.querySelectorAll(b) }, j = function (t, e) { return !s && (t.tabIndex = e) }, h = function (t) { y(g(), (function (t) { t.className = t.className.replace(o, '').trim(), t.ariaSelected = 'false', j(t, '-1') })), y(r.querySelectorAll("[role=tabpanel]"), (function (t) { return t.hidden = !0 })), t.className += ' ' + o, t.ariaSelected = 'true', j(t, '0'); var e = d(t), n = e && O(r, "#".concat(e)); n && (n.hidden = !1) }, v = O(r, ".".concat(o).concat(b)); (v = v || (n = (u.hash || '').replace('#', '')) && O(r, (e = a, "".concat(b, "[").concat(e, "=").concat(n, "]"))) || O(r, b)) && h(v), r.addEventListener('click', (function (t) { var e = t.target, n = f.call(e, b); if (n || (e = function (t) { var e; return y(g(), (function (n) { e || n.contains(t) && (e = n) })), e }(e)) && (n = 1), n && !t.__trg && e.className.indexOf(o) < 0) { t.preventDefault(), t.__trg = 1, h(e); var r = d(e); try { i && i.pushState(null, null, "#".concat(r)) } catch (t) { } } })) }.bind(el))(props[el.id]);
+          }</script>
+ </body>
 </html>
 </html>
